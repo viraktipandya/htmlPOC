@@ -1,0 +1,15 @@
+<div>
+  <form [formGroup]="formdata" >
+    <input type="text" name="emailid" placeholder="emailid" formControlName="emailid">
+    <br>
+    <input type="text" name="pwd" placeholder="pwd" formControlName="pwd">
+    <br>
+    <input type="submit"  [disabled] = "!formdata.valid" value="Login" (click)="hello(formdata.value)">
+
+
+  </form>
+</div>
+
+<p>{{email}}</p>
+<p>{{pass}}</p>
+<p> {{msg}}</p>

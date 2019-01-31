@@ -1,0 +1,12 @@
+<form class="myclass" #userlogin = "ngForm">
+  
+<input type="text" name="email" placeholder="Email Id" ngModel>
+<br>
+<br>
+
+<input type="text" name="pwd" placeholder="Pass Word" ngModel>
+<br>
+<br>
+<input type="button" value="submit" name="btn" (click)="hello(userlogin.value)">
+
+</form>

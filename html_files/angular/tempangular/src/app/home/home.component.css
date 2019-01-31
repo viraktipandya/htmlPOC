@@ -1,0 +1,33 @@
+.tempfrm
+{
+    height: 600px;
+    width: 400px;
+    margin-left: 300px;
+}
+.temphead
+{
+    height: 860px;
+    width: 698px;
+    margin-left: 300px;
+    
+}
+.templink
+{
+    height: 50px;
+    width: 450px;
+    border: 1px solid black;
+    margin: 0 auto ;
+     text-align: center; 
+ 
+}
+.childtemplink
+{
+    float: left;
+    margin-right: 10px;
+    
+}
+
+.onlyleft
+{
+    text-align: left;
+}

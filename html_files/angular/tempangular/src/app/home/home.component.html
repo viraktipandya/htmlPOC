@@ -1,0 +1,29 @@
+
+
+  
+    <div class="templink" *ngFor="let i of myarray ; let j=index" style="background-color:'{i.color}''">
+        
+        
+      <a   href="#" [routerLink]="[ '/resources' ]" routerLinkActive="currentUrl!='/resources'" (click)="hello()"  >
+      
+        <!-- <p *ngIf="!show" #temp1>{{i.color}}</p> -->
+          <p   *ngIf="show">{{i.name}}</p> 
+                   
+      </a>
+        
+          <!-- <p *ngIf="!show" style="text-align: left;float: left;margin-right: 10px; padding-left: 0px">{{i.color}}</p>  -->
+
+          <!-- style=" text-align: left " 
+          style="float: left;margin-right: 10px ;text-align: left "
+        -->
+        <!-- <div  *ngIf="!show" ng-style="{'background-color':getNumber()}"> {{i.color}} -->
+                <!-- <p ng-style="{background-color:getNumber()}">{{i.color}}</p> -->
+          <p *ngIf="!show" class="childtemplink" >{{i.details.Area}} </p>
+          <p *ngIf="!show"  >{{i.details.Location}}</p>
+          <p *ngIf="!show" class="onlyleft">{{i.details["Year of Formation"]}}</p>
+            </div>
+     <!-- </div> -->
+
+
+
+<!-- </div> -->
